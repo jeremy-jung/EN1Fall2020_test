@@ -1,0 +1,22 @@
+<html><head>
+  <script src="https://cdn.jsdelivr.net/gh/tuftsceeo/SPIKE-Web-Interface/cdn/ServiceDock.js" />
+  <script src="airtable_script.js" />
+</head>
+<body style="background-color: none">
+
+  <div id="servicedock" style="float:right;">
+    <!-- Replace apikey, baseid, AND tablename with your own Airtable information -->
+    <service-airtable id="service_airtable"
+      apikey = "keyp43YJfzPEkG2Lz"
+      baseid = "app8rjr9bqItFXUuL"
+      tablename = "Data"
+    ></service-airtable>
+  </div>
+
+  <p>Control the Robot</p>
+	<button airtable_value='action'>Slower</button>
+	<button airtable_value='action'>Faster</button>
+	<button airtable_value='action'>Stop</button>
+
+</body>
+</html>
