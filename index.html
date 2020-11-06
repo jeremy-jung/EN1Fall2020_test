@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Template for an EN1 Final Project Page
 Edited 11-4-20
 Ethan Danahy, Teddy Robbins, Jeremy Jung
@@ -9,15 +9,15 @@ Ethan Danahy, Teddy Robbins, Jeremy Jung
 <!-- This imports the magic script -- don't touch! -->
     <script src="https://cdn.jsdelivr.net/gh/tuftsceeo/SPIKE-Web-Interface/cdn/ServiceDock.js"
     type="text/javascript"></script>
-    
+
 <!-- This creates the Airtable button -->
 <div id="servicedock" style="float:right;">
     <!-- IMPORTANT!!! REPLACE "apikey", "baseid", AND "tablename" attributes with your own information -->
-    <service-airtable id="service_airtable" apikey = "YOURAPIKEY" baseid = "YOURBASEID" tablename = "YOURTABLENAME">
+    <service-airtable id="service_airtable" apikey = "keyp43YJfzPEkG2Lz" baseid = "SPIKE" tablename = "Data">
     </service-airtable>
 </div>
 
-<script src="airtable_script.js"></script> 
+<script src="airtable_script.js"></script>
 <!-- --------------------------------------------- -->
 </head>
 <body style="background-color: none">
@@ -29,23 +29,23 @@ Ethan Danahy, Teddy Robbins, Jeremy Jung
     <!-- INPUTS: -->
     <!-- Types of input: Button -->
 
-<!--     
+<!--
     Add buttons using the button tag. The name in airtable_value
-    will be set to whatever is in between the button tag. 
+    will be set to whatever is in between the button tag.
     In the case of the first button below, 'action' will be set
-    to 'Slower' 
+    to 'Slower'
 -->
 
     <div class='buttonBlock'>
     <p>Robot Control Buttons</p> <!-- Name your button(s) in this paragraph tag -->
-	<button airtable_value='action'>Slower</button> 
+	<button airtable_value='action'>Slower</button>
 	<button airtable_value='action'>Faster</button>
 	<button airtable_value='action'>Stop</button>
     </div>
 
     <!-- Types of input: Slider -->
 
-<!--     
+<!--
     Add sliders & buttons together by using the <input type='range'>
     tag and the button tag. The slider can have a min/max value
     and a starting value called 'value'. The name in airtable_value
@@ -62,12 +62,12 @@ Ethan Danahy, Teddy Robbins, Jeremy Jung
 
     <!-- Types of input: Text -->
 
-<!--     
+<!--
     Add text input using the <form> tag with an <input type='text'>
     tag inside. The form requires a submit button, which can be
     copied and pasted below the text input tag. Make sure to use
     1 form per 1 text input! The name in airtable_value will be
-    set to whatever the user enters into the text input. 
+    set to whatever the user enters into the text input.
 -->
 
     <div class='textBlock'>
@@ -84,7 +84,7 @@ Ethan Danahy, Teddy Robbins, Jeremy Jung
 <style>
 
     /* This is where you can make changes to the
-    appearance of your different blocks. 
+    appearance of your different blocks.
 
     For info on CSS, copy and paste the link
     below into your browser!
@@ -97,9 +97,9 @@ Ethan Danahy, Teddy Robbins, Jeremy Jung
         /*Give your button block some style!
         Add color, change the border, and
         change the size using CSS styling*/
-        background-color:lightblue; 
+        background-color:lightblue;
         border:solid;
-        padding-top: 10px; 
+        padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 40px;
         width:30%;
